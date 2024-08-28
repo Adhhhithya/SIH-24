@@ -100,12 +100,9 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
-.wrapper:hover .btn{
-    background: transparent;
-    color: #fff;
-}
 
-.wrapper .register-link {
+
+/*.wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
@@ -120,7 +117,7 @@ body {
 
 .register-link p a:hover {
     text-decoration: underline;
-}
+}*/
 .btn{
     text-decoration: none;
     color: #000;
