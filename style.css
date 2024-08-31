@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'REM', sans-serif;
+
+    display: block;
+    background-color: #fff;
+}
+/*Nav -Deefake*/
+.nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+    transition: .5s;
+}
+a:hover{
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(151, 151, 151);
+}
+.nav,.list{
+    display: flex;
+}
+.list{
+    gap: 2rem;
+    letter-spacing: 3px;
+    justify-items: left;
+}
+.nav{
+    margin: 10px 10px;
+    background-color: #5a42aa;
+    height: 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+}
+
+#about{
+    display: flex;
+    margin-top: 20px;
+    padding: 40px;
+    height: 40vh;
+    background-color: rgb(255, 236, 214);
+
+}
+#contact{
+    display: flex;
+    margin-top: 20px;
+    padding: 40px;
+    height: 40vh;
+    background-color: #000;
+    color: #fff;
+}
+#detect{
+    display: flex;
+    margin-top: 20px;
+    padding: 40px;
+    height: 40vh;
+    background-color: #fff;
+}
+.input-section{
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 10px 8px 5px;
+    justify-content: space-around;
+    margin-right: 25px;
+    
+}
+.file-upload{
+    color: #5a42aa;
+}
+.Btn{
+    background: transparent;
+    position: relative ;
+    padding: 6px;
+    border-radius: 15px;
+    margin-left: 4px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'REM',sans-serif;
+}
+.input{
+    display: none;
+    color: #000;
+    font-size: 18px;
+    background: transparent;
+}

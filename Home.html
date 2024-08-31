@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h2>DeepFake</h2>
+        </div>
+        <div class="list">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#detect">Detect</a>
+            <a href="Login.html">Login</a>
+        </div>
+    </div>
+    <div id="about">
+        <p>
+            hello, this is the sample of About.
+        </p>
+    </div>
+    <div id="detect">
+        <div class="input-section">
+            <h2>Image Analysis</h2>
+            <label for="imageInput" class="file-upload">Choose Image</label>
+            <input type="file" class="input" accept="image/*">
+            <button onclick="analyzeImage()" class="Btn">Analyze</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Audio Analysis</h2>
+            <label for="audioInput" class="file-upload">Choose Audio</label>
+            <input type="file" class="input" accept="audio/*">
+            <button onclick="analyzeAudio()" class="Btn">Analyze</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Video Analysis</h2>
+            <label for="videoInput" class="file-upload">Choose Video</label>
+            <input type="file" class="input" accept="video/*">
+            <button onclick="analyzeVideo()" class="Btn">Analyze</button>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <p>
+            hello, this is the sample of Contact
+        </p>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
