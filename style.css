@@ -69,3 +69,31 @@ a:hover{
     height: 40vh;
     background-color: #fff;
 }
+.input-section{
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 10px 8px 5px;
+    justify-content: space-around;
+    margin-right: 25px;
+    
+}
+.file-upload{
+    color: #5a42aa;
+}
+.Btn{
+    background: transparent;
+    position: relative ;
+    padding: 6px;
+    border-radius: 15px;
+    margin-left: 4px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'REM',sans-serif;
+}
+.input{
+    display: none;
+    color: #000;
+    font-size: 18px;
+    background: transparent;
+}

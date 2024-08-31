@@ -23,14 +23,34 @@
         </p>
     </div>
     <div id="detect">
-        <p>
-            hello, this is the sample of Detect.
-        </p>
+        <div class="input-section">
+            <h2>Image Analysis</h2>
+            <label for="imageInput" class="file-upload">Choose Image</label>
+            <input type="file" class="input" accept="image/*">
+            <button onclick="analyzeImage()" class="Btn">Analyze</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Audio Analysis</h2>
+            <label for="audioInput" class="file-upload">Choose Audio</label>
+            <input type="file" class="input" accept="audio/*">
+            <button onclick="analyzeAudio()" class="Btn">Analyze</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Video Analysis</h2>
+            <label for="videoInput" class="file-upload">Choose Video</label>
+            <input type="file" class="input" accept="video/*">
+            <button onclick="analyzeVideo()" class="Btn">Analyze</button>
+        </div>
+
     </div>
+
     <div id="contact">
         <p>
             hello, this is the sample of Contact
         </p>
     </div>
+    <script src="script.js"></script>   
 </body>
 </html>
