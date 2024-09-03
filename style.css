@@ -15,15 +15,10 @@ body{
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 25px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: .5s;
 }
 a:hover{
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(151, 151, 151);
+    color: #000;
 }
 .nav,.list{
     display: flex;
@@ -53,7 +48,7 @@ a:hover{
     color: white;
     text-align: center;
     padding: 20px;
-    transition: background 0.5s ease-in-out;
+    transition: background 0.7s ease-in-out;
 }
 .sections:nth-child(even) {
     background-color: #e0e0e0;
@@ -73,25 +68,57 @@ a:hover{
     height: 40vh;
     background-color: #000;
     color: #fff;
-}
-#detect{
-    display: flex;
-    margin-top: 20px;
-    padding: 40px;
-    height: 40vh;
-    background-color: #fff;
 }*/
-.input-section{
-    display: block;
-    position: relative;
-    margin-left: 10px;
-    padding: 10px 10px 8px 5px;
-    justify-content: space-around;
-    margin-right: 25px;
-    
+#detect{
+    display: grid;
+    grid-template-columns: 50vh 50vh 50vh;
+    grid-template-rows: 100vh;
+
 }
-.input-section img{
-    position: absolute;
+.input-Image{
+    background-image: url(Input_Ex.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 45vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    transition:  .8s;
+}
+.input-Image:hover{
+    width: 70vh;
+}
+.input-Audio{
+    background-image: url() ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 45vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .8s;
+}
+.input-Audio:hover{
+    width: 70vh;
+}
+.input-Video{
+    background-image: url() ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 45vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .file-upload{
     color: #5a42aa;
@@ -100,11 +127,17 @@ a:hover{
     background: transparent;
     position: relative ;
     padding: 6px;
+    align-self: center;
     border-radius: 15px;
-    margin-left: 4px;
-    margin-top: 10px;
     font-size: 20px;
+    width: 30vh;
     font-family: 'REM',sans-serif;
+    transition: .5s;
+}
+.Btn:hover{
+    opacity: 0.9;
+    background-color: rgb(65, 65, 65);
+    color:#ff7e5f;
 }
 .input{
     display: none;
