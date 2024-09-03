@@ -172,3 +172,10 @@ const canvas = document.getElementById('background-canvas');
                 label.textContent = fileName.length > 20 ? fileName.substring(0, 17) + '...' : fileName;
             });
         });
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', event => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+});
+});
