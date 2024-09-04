@@ -10,7 +10,13 @@ body{
     font-family: 'REM', sans-serif;
 
 }
-/*Nav -Deefake*/
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .nav a{
     text-decoration: none;
     color: white;
@@ -18,6 +24,8 @@ body{
     transition: .5s;
 }
 a:hover{
+    font-weight: bold;
+    letter-spacing: .8rem;
     color: #000;
 }
 .nav,.list{
@@ -29,18 +37,22 @@ a:hover{
     justify-items: left;
 }
 .nav{
-    background-color: #5a42aa;
+    top: 0;
+    background-color: #B88ae6;
     height: 5rem;
+    width: 250vh    ;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    margin-bottom: 15px;
 }
 .logo{
     font-size: 25px;
     color: #fff;
 }
-.sections{
+.about-sec{
     height: 100vh;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background: linear-gradient(180deg, #1a1c1b, #2a2e2e);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,47 +62,49 @@ a:hover{
     padding: 20px;
     transition: background 0.7s ease-in-out;
 }
-.sections:nth-child(even) {
-    background-color: #e0e0e0;
-}
-/*#about{
+.detect-sec{
+    height: 100vh;
+    background: linear-gradient(180deg, #2a2e2e,#555d58);
     display: flex;
-    margin-top: 20px;
-    padding: 40px;
-    height: 40vh;
-    background-color: rgb(255, 236, 214);
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.7s ease-in-out;
 }
-#contact{
+.contact-sec{
+    height: 100vh;
+    background: linear-gradient(180deg,#555d58,#95ff77);
     display: flex;
-    margin-top: 20px;
-    padding: 40px;
-    height: 40vh;
-    background-color: #000;
-    color: #fff;
-}*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.7s ease-in-out;
+}
 #detect{
     display: grid;
-    grid-template-columns: 50vh 50vh 50vh;
+    grid-template-columns: 55vh 55vh 55vh;
     grid-template-rows: 100vh;
 
 }
 .input-Image{
-    background-image: url(Input_Ex.jpeg) ;
+    background-image: url() ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 45vh;
+    width: 50vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
     transition:  .8s;
-}
-.input-Image:hover{
-    width: 70vh;
 }
 .input-Audio{
     background-image: url() ;
@@ -104,9 +118,6 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     transition: .8s;
-}
-.input-Audio:hover{
-    width: 70vh;
 }
 .input-Video{
     background-image: url() ;
@@ -136,8 +147,8 @@ a:hover{
 }
 .Btn:hover{
     opacity: 0.9;
-    background-color: rgb(65, 65, 65);
-    color:#ff7e5f;
+    background-color: #525050;
+    color:#000;
 }
 .input{
     display: none;
